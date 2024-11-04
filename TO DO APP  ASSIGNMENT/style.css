@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgba(36, 36, 240, 0.753), rgb(245, 145, 145));
+    font-family: Arial, ;
+}
+
+.container {
+    border: 1.5px solid white;
+    width: 45vw;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.329);
+    padding: 30px 20px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    text-transform: uppercase;
+    font-family: "Dancing Script";
+    margin-bottom: 5%;
+    color: pink;
+    text-align: center;
+  
+
+}
+
+#select {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 15px;
+
+}
+
+#inputField {
+    width: 35vw;
+    height: 50px;
+    padding: 15px;
+    margin-bottom: 18px;
+    font-size: 18px;
+    color: rgb(74, 189, 228);
+    font-family: "Playfair Display";
+    outline: none;
+    border: 3px solid pink;
+}
+
+.container button {
+    width: 70px;
+    height: 50px;
+    padding: 0 5px;
+    background: linear-gradient(rgba(36, 36, 240, 0.753), rgb(245, 145, 145));
+    border: none;
+    color: pink;
+    font-size: 15px;
+}
+
+ul {
+    padding-left: 4px;
+    list-style-type: none;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Playfair Display";
+    align-items: center;
+    border: 3px solid pink;
+    color: palevioletred;
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 5px;
+    background-color: white;
+    margin-bottom: 7px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        
+    }
+
+    #select {
+        flex-direction: row;
+     
+    }
+
+    #inputField,
+    .container button {
+        width: 65%;
+        height: 45px;
+        
+    }
+
+    .container button {
+        width: 30%;
+        height: 45px;
+    }
+
+}
+
+@media (max-width: 480px) {
+    li {
+        font-size: 14px;
+    }
+
+    .container h1 {
+        font-size: 24px;
+    }
+
+    .container {
+        width: 100vw;
+    }
+}
